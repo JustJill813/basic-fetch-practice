@@ -1,4 +1,4 @@
-import { fetchUsers } from "./js/fetchData.js";
+import { fetchUsers } from "./fetchdata.js";
 
 const userCardsContainer = document.getElementById("user-cards-container");
 const fetchAllButton = document.getElementById("fetch-all");
