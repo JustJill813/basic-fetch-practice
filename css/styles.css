@@ -43,3 +43,16 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media (min-width: 768px) {
+    #user-cards-container {
+        grid-template-columns: 1fr; /* Force one card per row */
+    }
+
+    .user-card {
+        display: flex;
+        justify-content: space-between; /* Spreads out contents */
+        align-items: center; /* Aligns text properly */
+        padding: 20px;
+    }
+}

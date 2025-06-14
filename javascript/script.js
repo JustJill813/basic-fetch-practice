@@ -10,6 +10,7 @@ function createUserCard(user) {
     card.classList.add("user-card");
     card.innerHTML = `
         <h2>${user.firstName} ${user.lastName}</h2>
+        <p>Email: ${user.email}</p>
         <p>Company: ${user.companyName}</p>
         <p>Years Employed: ${user.yearsEmployed}</p>
     `;
