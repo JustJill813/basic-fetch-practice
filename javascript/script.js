@@ -1,4 +1,4 @@
-import { fetchUsers } from "js/fetchData.js";
+import { fetchUsers } from "./js/fetchData.js";
 
 const userCardsContainer = document.getElementById("user-cards-container");
 const fetchAllButton = document.getElementById("fetch-all");
@@ -26,7 +26,7 @@ fetchAllButton.addEventListener("click", async () => {
 fetchFilteredButton.addEventListener("click", async () => {
     const users = await fetchUsers();
     userCardsContainer.innerHTML = "";
-    users.filter(user => user.employmentYears < 10).forEach(createUserCard);
+    users.filter(user => user.yearsEmployed < 10).forEach(createUserCard);
 });
 
 clearCardsButton.addEventListener("click", () => {
